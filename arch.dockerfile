@@ -11,8 +11,8 @@
       linux-headers \
       make \
       cmake \
-      g++ \
-    git clone https://github.com/microsoft/mimalloc.git -b ${APP_VERSION}; \
+      g++; \
+    git clone https://github.com/microsoft/mimalloc.git -b v${APP_VERSION}; \
     cd /git/mimalloc; \
     mkdir build; \
     cd build; \
