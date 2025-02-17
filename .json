@@ -4,9 +4,7 @@
   "root":"/",
   
   "semver":{
-    "version":"2.1.9",
-    "stable":"2.1.9",
-    "latest":"2.1.9"
+    "version":"2.1.9"
   },
 
   "readme":{

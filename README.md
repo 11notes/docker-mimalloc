@@ -9,8 +9,6 @@
 These are the main tags for the image. There is also a tag for each commit and its shorthand sha256 value.
 
 * [2.1.9](https://hub.docker.com/r/11notes/mimalloc/tags?name=2.1.9)
-* [stable](https://hub.docker.com/r/11notes/mimalloc/tags?name=stable)
-* [latest](https://hub.docker.com/r/11notes/mimalloc/tags?name=latest)
 
 
 # SYNOPSIS 📖
@@ -36,7 +34,6 @@ USER docker
 
 # BUILT WITH 🧰
 * [mimalloc](https://github.com/microsoft/mimalloc)
-* [alpine](https://alpinelinux.org)
 
 # GENERAL TIPS 📌
 * Use a reverse proxy like Traefik, Nginx, HAproxy to terminate TLS and to protect your endpoints
