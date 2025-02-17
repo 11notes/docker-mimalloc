@@ -22,3 +22,4 @@
 # :: Header
   FROM scratch
   COPY --from=build /git/mimalloc/build/libmimalloc.so /usr/lib/
+  USER 1000
