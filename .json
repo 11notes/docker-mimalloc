@@ -1,0 +1,18 @@
+{
+  "image":"11notes/mimalloc",
+  "name":"mimalloc",
+  "root":"/",
+  
+  "semver":{
+    "version":"2.1.9",
+    "stable":"2.1.9",
+    "latest":"2.1.9"
+  },
+
+  "readme":{
+    "description":"mimalloc is a compact general purpose allocator with excellent performance",
+    "parent":{
+      "image":"scratch"
+    }
+  }
+}
