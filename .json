@@ -11,6 +11,9 @@
     "description":"mimalloc is a compact general purpose allocator with excellent performance",
     "parent":{
       "image":"scratch"
+    },
+    "built":{
+      "mimalloc":"https://github.com/microsoft/mimalloc"
     }
   }
 }
