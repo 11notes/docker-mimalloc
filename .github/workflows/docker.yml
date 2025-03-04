@@ -163,13 +163,6 @@ jobs:
           tags: |
             localhost:5000/${{ env.IMAGE }}:${{ env.IMAGE_SEMVER_PREFIX }}grype${{ env.IMAGE_SEMVER_SUFFIX }}
 
-      - name: docker / output build log
-        id: docker-buildx
-        run: |
-          BUILDX_LOG=/tmp/buildx-${{ env.GITHUB_SHA_SHORT }}.log
-          docker buildx history logs >& ${BUILDX_LOG}
-          echo "log=${BUILDX_LOG}" >> $GITHUB_OUTPUT
-
       - name: grype / scan
         if: env.WORKFLOW_GRYPE_SCAN == 'true'
         id: grype
@@ -264,7 +257,6 @@ jobs:
         with:
           sarif_file: ${{ steps.grype.outputs.sarif }}
           build_output_metadata: ${{ steps.docker-build.outputs.metadata }}
-          development: true
 
       - name: github / commit & push
         continue-on-error: true
